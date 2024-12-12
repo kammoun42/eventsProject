@@ -17,7 +17,7 @@ services:
   Foyer-backend:
     depends_on:
       - mysqldb
-    image: kammoun42/event
+    image: kammoun42/event:v2
     restart: on-failure
     ports:
       - 8089:8089
