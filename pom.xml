@@ -9,11 +9,11 @@
         <version>3.3.4</version>
         <relativePath/>
     </parent>
-        <groupId>tn.esprit</groupId> 
-         <artifactId>eventsProject</artifactId>                       
-         <version>1.0.0</version> 
-         <name>eventsProject</name>
-         <description>eventsProject</description>
+    <groupId>tn.esprit</groupId>
+    <artifactId>eventsProject</artifactId>
+    <version>1.0.0</version>
+    <name>eventsProject</name>
+    <description>eventsProject</description>
     <properties>
         <java.version>17</java.version>
     </properties>
@@ -29,7 +29,7 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.33</version> <!-- Specify the version -->
+            <version>8.0.33</version>
             <scope>runtime</scope>
         </dependency>
         <dependency>
@@ -42,22 +42,12 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-
-            <!-- JUnit -->
-
-
-            <!-- Mockito -->
-
-
-
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
-            <version>5.9.0</version> <!-- Ensure this matches the version of Spring Boot -->
+            <version>5.9.0</version>
             <scope>test</scope>
         </dependency>
-
-        <!-- JUnit Jupiter Engine -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
@@ -67,11 +57,9 @@
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
-            <version>2.2.220</version> <!-- Latest version as of Oct 2024 -->
+            <version>2.2.220</version>
         </dependency>
-        </dependencies>
-
-
+    </dependencies>
     <build>
         <plugins>
             <plugin>
@@ -88,12 +76,15 @@
             </plugin>
         </plugins>
     </build>
-<distributionManagement> 
-<repository>
- <id>deploymentRepo</id>
- <name>maven-releases</name> 
-<url>http://localhost:8081/repository/maven-releases/</url> </repository> <snapshotRepository>
- <id>snapshots</id>
- <url>http://localhost:8081/repository/maven-snapshots/</url> </snapshotRepository>
+    <distributionManagement>
+        <repository>
+            <id>deploymentRepo</id>
+            <name>maven-releases</name>
+            <url>http://localhost:8081/repository/maven-releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <url>http://localhost:8081/repository/maven-snapshots/</url>
+        </snapshotRepository>
     </distributionManagement>
 </project>
